@@ -20,7 +20,7 @@ jobs:
     runs-on: [ self-hosted, tutorial-be-dev, vm-user3SelfHost-az-usw3-sbx-001 ]
     environment:
       name: sit
-      url: https://sit-user3-web.azure101.ml/swagger/index.html
+      url: https://app-user3-az-usw3-uat-001.azurewebsites.net/swagger/index.html
     
     steps:
     - name: Download Artifact
