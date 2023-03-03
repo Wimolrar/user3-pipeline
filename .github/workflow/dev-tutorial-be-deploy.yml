@@ -53,11 +53,11 @@ jobs:
 
   deploy-app-service:
     name: Deploy
-    runs-on: [ self-hosted, <username>-sbx, vm-<username>SelfHost-az-<region>-sbx-001 ]
+    runs-on: [ self-hosted, user3-sbx, vm-user3SelfHost-az-usw3-sbx-001 ]
     needs: [build-app-service]
     environment:
       name: dev
-      url: https://app-<username>-az-<region>-dev-001.azurewebsites.net/swagger/index.html
+      url: https://app-user3-az-usw3-dev-001.azurewebsites.net/swagger/index.html
  
 
     steps:
